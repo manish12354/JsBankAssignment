@@ -1,0 +1,63 @@
+Accounts and Transactions
+--------------------------
+Goal: Build a system that simulates a bank account. 
+
+* An account has money
+* Each account belongs to a person.
+* Each account has an account number
+* Money can be credited(deposited) into an account
+* Money can be debited(withdrawn) from an account
+
+Build a library that lets a user perform all of the above operations. Primarily, a user(programmer) should be able to require your files and easily do the following:
+
+* Create an account
+* Credit money into an account
+* Debit money from an account
+* Generate the account summary of a given account
+* Generate the statement of a given account
+
+
+The summary should contain:
+
+* Account Number
+* Name of the account holder
+* The current balance in the account
+
+
+The statement should contain:
+
+* Account Number
+* Name of the account holder
+* A list of transactions
+  * Each transaction should contain the type of transaction and the amount
+* The current balance in the account
+
+
+Assumptions:
+
+* For now, assume that a negative balance is acceptable 
+* As of now, any credit or debit operation is a transaction
+
+
+Expectations:
+
+* Use objects where applicable
+* There is no input and output here. 
+* Write tests to verify your work
+
+Transfer
+---------
+* Money can be transferred from one account to another
+* A transfer should reflect in the statement as its own item.
+* When money is transferred from one account to another, money is debited from the payer  account and credited to the payee account
+* The statement should reflect:
+   * The amount transferred and the account transferred to(for the payer)
+   * The amount transferred into and the account transferred from(for the payee)
+	
+The Value Of A Bank
+--------------------
+* A bank has a name
+* A bank can have many accounts
+* Each account has a unique ID
+* A bank would like to know how many accounts it has
+* A bank would like to know what is the total amount of money contained across all its accounts
